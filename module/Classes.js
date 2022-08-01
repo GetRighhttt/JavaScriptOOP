@@ -50,4 +50,46 @@ class Person {
   }
 }
 
-export default Person;
+/**
+ * This is an example of inheritance:
+ *
+ * A professional athlete is still a person, so we can inherit the properties of the person
+ * class to the ProAthlete class.
+ *
+ * We use the super keyword to pass in the values from the other classes.
+ */
+
+class ProAthlete extends Person {
+  // initialized when class is first created.
+  constructor(age, name, height, gender, lname, sport, position) {
+    super(age, name, height, gender, lname);
+    this.sport = sport;
+    this.position = position;
+  }
+
+  determineSport() {
+    switch (this.sport) {
+      case "basketball":
+        console.log( `${this.fullName}` + " plays basketball ");
+        break;
+      case "football":
+        console.log( `${this.fullName}` + " plays football ");
+        break;
+      case "soccer":
+        console.log( `${this.fullName}` + " plays soccer... =(, ");
+        break;
+      case "baseball":
+        console.log( `${this.fullName}` + " plays baseball... =(, ");
+        break;
+    }
+  }
+
+  getPosition() {
+    return `${this.position}`
+  }
+}
+
+export {
+  Person,
+  ProAthlete
+}

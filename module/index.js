@@ -1,13 +1,12 @@
-import Person from "./Classes.js"; // importing class Person from Classes.js
+import { Person, ProAthlete } from "./Classes.js"; // importing class Person from Classes.js
 
 /**
  * Now we will show how to create objects with classes in JS.
  */
 
-
 /**
  * First we will declare our properties in the constructor we created in the Classes.js file.
- * 
+ *
  * new keyword used to create an instance of the class.
  */
 const stefan = new Person(27, "Stefan", "7'0", "Man", "Bayne");
@@ -32,13 +31,35 @@ Stefan Bayne is 27 years old, and is a Man!
 Ayesha Whitely is 36 years old, and is a Woman!
  */
 
-// let's use our setter to change the names of both of the objects
-stefan.firstName = "Steven"
-ayesha.firstName = "Alicia"
+stefan.firstName = "Steven";
+ayesha.firstName = "Alicia";
 
-console.log(stefan.printObject())
-console.log(ayesha.printObject())
+console.log(stefan.printObject());
+console.log(ayesha.printObject());
 /**
  Steven Bayne is 27 years old, and is a Man!
 Alicia Whitely is 36 years old, and is a Woman!
- */
+*/
+
+const stefanB = new ProAthlete(
+  27,
+  "Stefan",
+  "7'0",
+  "Man",
+  "Bayne",
+  "basketball",
+  "Point Guard"
+);
+
+const ayeshaW = new ProAthlete(
+  36,
+  "Lucky",
+  "5'0",
+  "Woman",
+  "Whitely",
+  "soccer",
+  "forward"
+);
+
+stefanB.determineSport();
+ayeshaW.determineSport();
