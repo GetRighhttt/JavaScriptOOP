@@ -13,7 +13,7 @@ class Person {
 
   // Method to check is person is tall or not.
   isTall() {
-    if (this.height === "6'0") {
+    if (this.height > "6'0") {
       console.log(`${this.name} is tall!`);
     } else {
       console.log(`${this.name} is short!`);
