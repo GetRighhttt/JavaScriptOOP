@@ -68,3 +68,18 @@ ayeshaW.determineSport();
  */
 stefanB.isTall();
 ayeshaW.isTall();
+
+/**
+ * Stefan is a man.
+Stefan is tall!
+Lucky is a woman.
+Lucky is short!
+Stefan Bayne is 27 years old, and is a Man!
+Lucky Whitely is 36 years old, and is a Woman!
+Steven Bayne is 27 years old, and is a Man!
+Alicia Whitely is 36 years old, and is a Woman!
+Stefan Bayne plays basketball 
+Lucky Whitely plays soccer... =( 
+Stefan is tall!
+Lucky is short!
+ */
