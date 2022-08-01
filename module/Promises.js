@@ -7,7 +7,8 @@
  * computations to happen in the background. Whereas in JS, it's used to defer a job and await,
  * a response. We do this with coroutines in Android also.
  * 
- * Promises are used often when making an HTTP request to a server.
+ * Promises are used often when making an HTTP request to a server, and when there's too much happening
+ * at one time, so we need to defer a task and await a result.
  * 
  * resolve = success; reject = failure
  */
