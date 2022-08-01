@@ -21,8 +21,8 @@ class Person {
   }
 
   // Method to check if they are a man or woman.
-  isMaleOfFemale() {
-    if (this.gender === "M") {
+  isMaleOrFemale() {
+    if (this.gender === "Man") {
       console.log(`${this.name} is a man.`);
     } else {
       console.log(`${this.name} is a woman.`);
