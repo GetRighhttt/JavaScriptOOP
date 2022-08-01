@@ -4,11 +4,12 @@
 
 class Person {
   // initialized when class is first created.
-  constructor(age, name, height, gender) {
+  constructor(age, name, height, gender, lname) {
     this.age = age;
     this.name = name;
     this.height = height;
     this.gender = gender;
+    this.lname = lname;
   }
 
   // Method to check is person is tall or not.
@@ -29,9 +30,23 @@ class Person {
     }
   }
 
+  /**
+   * getter methods are used to get properties.
+   *
+   * setter methods are used to set properties.
+   *
+   * we can print the full name and pass the method into another method
+   */
+
+  get fullName() {
+    return `${this.name} ${this.lname}`;
+  }
+  set firstName(name) {
+    this.name = name;
+  }
   // method to print out some properties.
   printObject() {
-    return `${this.name} is ${this.age} years old, and is a ${this.gender}!`;
+    return `${this.fullName} is ${this.age} years old, and is a ${this.gender}!`;
   }
 }
 
