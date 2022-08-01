@@ -44,7 +44,7 @@ Alicia Whitely is 36 years old, and is a Woman!
 const stefanB = new ProAthlete(
   27,
   "Stefan",
-  "7'0",
+  "6'1",
   "Man",
   "Bayne",
   "basketball",
@@ -63,3 +63,8 @@ const ayeshaW = new ProAthlete(
 
 stefanB.determineSport();
 ayeshaW.determineSport();
+/**
+ * Now we can use our proathlete objects with methods outlined in the person class.
+ */
+stefanB.isTall();
+ayeshaW.isTall();

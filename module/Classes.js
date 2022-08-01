@@ -76,10 +76,10 @@ class ProAthlete extends Person {
         console.log( `${this.fullName}` + " plays football ");
         break;
       case "soccer":
-        console.log( `${this.fullName}` + " plays soccer... =(, ");
+        console.log( `${this.fullName}` + " plays soccer... =( ");
         break;
       case "baseball":
-        console.log( `${this.fullName}` + " plays baseball... =(, ");
+        console.log( `${this.fullName}` + " plays baseball... =( ");
         break;
     }
   }
